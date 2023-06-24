@@ -1,0 +1,324 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: martel-heavy;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+    align-items: center;
+}
+
+/*
+.heading{
+    color:#3498db;
+    text-align: center;
+    margin-top: -600px;
+}
+*/
+.container{
+    display: flex; 
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 4px 4px 16px black;
+    overflow: hidden; 
+    border-radius: 7px;
+}
+img{
+    height: 500px;
+    width: 350px;
+    border-radius: 7px;  
+}
+.intro{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 147px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transform: 5s;
+    border-radius: 7px;
+}
+a:link{
+    text-decoration: none;
+}
+h1{
+    margin: 10px;
+    font-size: 24.5px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+}
+span{
+    font-weight: bold;
+    border-radius: 7px;
+}
+.card:hover{
+    cursor: pointer;
+    border-radius: 7px;
+}
+.card:hover .intro{
+    height: 76px;
+    bottom: 140px;
+    background: black;
+    border-radius: 7px;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+    border-radius: 7px;
+}
+/*
+.btn{
+    width: 200px;
+    height: 200px;
+    background: #0088cc;
+    margin: right;
+    padding: 2%;
+    position: right;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 100;
+  }
+  
+  .btn-bot{
+    position: absolute;
+    bottom: 0px;
+  }
+  */
+  .btn{
+    text-align: end;
+   /* border: 1px solid #1f0128;*/
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin-top: 600px;
+    margin-right: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    /*color: #3498db;*/
+    border-radius: 50px;
+  }
+  /*-----------------  Phase 1 BORDER Part1 ---------------------------*/
+  .btn13{
+    border: 1px solid #1A1015;
+    color: #1A1015;
+    font-size: 50px;
+    border-radius: 10px;
+    padding: 30px 30px;
+  }
+  .btn1{
+    border: 1px solid #8A5832db;
+    color: #8A5832db;
+  }
+  .btn2{
+    border: 1px solid #D7EEEA;
+    color: #D7EEEA;
+  }
+  .btn3{
+    border: 1px solid #83A0B8;
+    color: #83A0B8;
+  }
+  .btn4{
+    border: 1px solid #999D93;
+    color: #999D93;
+  }
+  /*-----------------  Phase 2 BORDER Part1 ---------------------------*/
+  .btn5{
+    border: 1px solid #C0BCAB;
+    color: #C0BCAB;
+  }
+  .btn6{
+    border: 1px solid #E1C46D;
+    color: #E1C46D;
+  }
+  .btn7{
+    border: 1px solid #DDAA9A;
+    color: #DDAA9A;
+  }
+  .btn8{
+    border: 1px solid  #DDAA9A;
+    color: #F9E1C8;
+  }
+    /*-----------------  Phase 3 BORDER  Part1---------------------------*/
+  .btn9{
+    border: 1px solid #B3765C;
+    color: #B3765C;
+  }
+  .btn10{
+    border: 1px solid #E7C28E;
+    color: #E7C28E;
+  }
+  .btn11{
+    border: 1px solid #F6FAFA;
+    color: #F6FAFA;
+  }
+  .btn12{
+    border: 1px solid #DD980C;
+    color: #DD980C;
+  }
+  /*-----------------  Phase 1   HOVER    Part2---------------------------*/ 
+  .btn13:hover{
+    color:#F9E1C8;
+  }
+  .btn1:hover{
+    color:#0C0507;
+  }
+  .btn2:hover{
+    color:#112934;
+  }
+  .btn3:hover{
+    color:#000101;
+  }
+  .btn4:hover{
+    color:#171718;
+  }
+  /*-----------------  Phase 2   HOVER    Part2---------------------------*/ 
+  .btn5:hover{
+    color:#314967;
+  }
+  .btn6:hover{
+    color:#3B403A;
+  }
+  .btn7:hover{
+    color:#49375D;
+  }
+  .btn8:hover{
+    color:#1D150F;
+  }
+  /*-----------------  Phase 3   HOVER    Part2---------------------------*/ 
+  .btn9:hover{
+    color:#291C22;
+  }
+  .btn10:hover{
+    color:#150602;
+  }
+  .btn11:hover{
+    color:#102539;
+  }
+  .btn12:hover{
+    color:#282323;
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    /*background: #3498db;*/
+    z-index: -1;
+    transition: 0.8;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  /*-----------------  Phase 1   BEFORE   Part3---------------------------*/ 
+ .btn13::before{
+    background:#1A1015 ;
+ }
+  .btn1::before{
+    background: #8A5832 ;
+  }
+  .btn2::before{
+    background: #D7EEEA ;
+  }
+  .btn3::before{
+    background: #83A0B8 ;
+  }
+  .btn4::before{
+    background:#999D93 ;
+  }
+  /*-----------------  Phase 2   BEFORE   Part3---------------------------*/ 
+  .btn5::before{
+    background: #C0BCAB ;
+  }
+  .btn6::before{
+    background: #E1C46D ;
+  }
+  .btn7::before{
+    background:  #DDAA9A ;
+  }
+  .btn8::before{
+    background: #DDAA9A ;
+  }
+  /*-----------------  Phase 3   BEFORE   Part3---------------------------*/ 
+  .btn9::before{
+    background: #B3765C ;
+  }
+  .btn10::before{
+    background: #E7C28E ;
+  }
+  .btn11::before{
+    background: #F6FAFA ;
+  }
+  .btn12::before{
+    background:#DD980C ;
+  }
+  .btn:hover::before{
+    height: 180%;
+  }
+/*
+  .back-video{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: 0;
+  }
+  
+  @media(min-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height:auto;
+    }
+  }
+  
+  @media(max-aspect-ratio:16/9){
+    .back-video{
+        width:auto;
+        height:100%;
+    }
+  }
+  
+  .fullvideo{
+    position: fixed;
+    overflow: hidden;
+    top:50%;
+    left: 50%;
+    min-width: 100%;
+    min-height:100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index:-20;
+  }
+  */
+  .back-video{
+    position: absolute;
+    overflow: hidden;
+    top:50%;
+    left: 50%;
+    right:50%;
+    bottom:50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index:-20;
+  }
+  @media(min-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height:auto;
+    }
+  }
+  @media(max-aspect-ratio:16/9){
+    .back-video{
+        width:auto;
+        height:100%;
+    }
+  }
+
